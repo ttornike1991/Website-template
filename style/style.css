@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:'extrasquare';
+    text-decoration: none;
+    color: unset;
+}
+
+.container{
+    max-width:1440px; 
+    margin:auto
+
+}
+.flex{
+    display: flex;
+
+}
+
+header{
+    height: 80px;
+    max-width:100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ulDiv{
+    flex-grow:3;
+
+}
+
+.img{
+    flex-grow:0.5;
+}
+.img img{
+    width: 180px;
+    object-fit: cover;
+    
+}
+.socIcons{
+    flex-grow:1.5;
+    min-width: 100px;
+    text-align: end;
+
+}
+.socIcons i{
+    margin-right: 15px;
+    color:  #FF7B00;
+}
+.ulx{
+    list-style: none;
+    justify-content: center;
+
+}
+.ulx li{
+    
+    margin-right: 20px;
+    color:#494949
+    ;
+    font-family: extrasquare;
+}
+.ulx li:hover{
+    color:  #797878;
+    cursor: pointer;
+}
+@font-face {
+    font-family: 'extrasquare';
+    src: url('./fonts/bpg_extrasquare_2009.ttf');
+}
+.banner{
+    position: relative;
+    background-image: url('./img/banner.png');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: left center;
+    width: 100%;
+}
+.layer{
+    position: absolute;
+    background-color: #4054B2 ;
+    width: 100%;
+    height:100%;
+    opacity: 0.54;
+}
+.bannerText{
+    position: relative;
+    z-index: 2;
+    max-width:50%;
+    height: 100%;
+    padding: 0 10%;
+}
+.bannerText p {
+    font-size: 50px; 
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-family: 'extrasquare';
+}
+.getStart{
+    font-family: 'extrasquare';
+    padding: 10px 15px;
+    font-size:18px; 
+    border-radius: 20px;
+    background-color: white;
+    color: #4054B2;
+    text-decoration: none;
+}
+.round{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border:2px solid #4054B2;
+}
+.heightfull{
+    height: 100%;
+}
+.fa-thin{
+    color: #4054B2;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 40px;
+    font-family:FontAwesome!important;
+}
+.card p{
+    width:70%;
+    margin: auto;
+    font-size: 18px; 
+    color: #7E8081;
+
+}
+.card1{
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.cardx{
+    border: 2px solid   #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+
+}
+.cardx:hover {
+    border: 2px solid   #c4c4c494;
+}
+.cardx:hover .round {
+    background-color:#4054B2;
+}
+.cardx:hover .fa-thin {
+    color:#ffffff;
+}
+.round {
+    margin: auto;
+}
+.font{
+    font-family:'extrasquare' ;
+}
+.Choose{
+    margin-top: 50px;
+    padding-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.Choose h3 {
+    font-size: 40px;
+}
+.Choose p {
+    font-size: 16px;
+    width:50%;
+    margin: auto;
+    color:#7E8081;
+}
+
+.cardgroup{
+    text-align: center;
+    justify-content: center;
+    gap:50px;
+    padding-bottom: 100px;
+
+}
+
+.plans{
+    background-color:#EEEEEE;
+}
+.cardgroup div {
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.cardgroup div  div {
+    margin-top: 30px;
+}
+.cardgroup div  div:last-child {
+    margin-bottom: 30px;
+}
+.getsecondstart{
+    border: 2px solid #4054B2;
+    font-size: 12px ;
+    border-radius: 16px;
+    padding: 5px 12px;
+    color:#4054B2 ;
+}
+.line{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.582);
+    height: 1px;
+    width:50px!important;
+    margin: auto;
+}
+
+.ulTop ul li {
+    margin-bottom: 10px;
+}
+.plight{
+    color:#7e808191;
+    font-weight: 200;
+    font-size: 16px;
+    margin-top: 10px;
+    font-style:  initial;
+
+}
+.ulRide li::before{
+    content:'\f00c';
+    font-weight: bold;
+    font-family:FontAwesome;
+    font-style: normal;
+    padding-right: 10px;
+
+}
+.ulRide li{
+    margin: 20px;
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+
+    
+}
+
+.hovering:hover div * {
+    background-color:  #4054B2;
+    color: white;
+}
+.hovering:hover div {
+    background-color:  #4054B2;
+    color: white;
+}
+.hovering:hover  {
+    background-color:  #4054B2;
+    color: white;
+}
+.hovering:hover .getsecondstart {
+    background-color:  #ffffff;
+    border-color: white;
+    color:#4054B2;
+}
+.hovering:hover .line{
+   border-color: white;
+}
+.form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    gap: 10px;
+}
+
+.Email{
+    grid-column: 1;
+    grid-row: 3;
+    grid-area: 3/1/4/3;
+}
+.Aboutme{
+    grid-column: 2/2;
+    grid-row: 4;
+    grid-area: 4/1/6/3
+}
+.savebut{
+    background-color: #4054B2;
+    color: white;
+    font-size: 18px;
+    grid-column: 2;
+    grid-row: 5;
+    grid-area: 6/1/7/3;
+}
+.writeinfo{
+    color:#4054B2;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.form{
+    
+    margin-bottom: 60px;
+}
+.form:not(:first-child) *{
+    text-indent: 5px;
+    height: 35px;
+    border-radius: 7px;
+     
+}
+
+.Aboutme{
+    height: 100px!important;
+}
+
+.h3{
+    color: #4054B2;
+    text-align: center;
+    font-size: 24px;
+
+}
+.informationTable ul li {
+    color:#FF7B00;
+    margin:10px;
+
+}
+.deleteBtn{
+    display: block;
+    margin-left: auto;
+    background-color: #4054B2;
+    color: white;
+    width:200px;
+    height: 30px;
+    border-radius: 4px;
+}
+.feedBack{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #EEEEEE;
+}
+.feedBack div {
+    padding-top: 40px;
+}
+.profImg{
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+}
+.justify {
+    justify-content: space-between;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+}
+.xdiv{
+    padding-bottom: 50px;
+}
+
+.grid div p{
+    color:#7e808198;
+    font-style: italic;
+    width: 80%;
+    
+}
+.grid div div h4{
+    color:#4054B2;
+    font-style: normal;
+    
+}
+.grid div div h6{
+    color:#7e808198;
+    font-style: normal;
+    font-weight: 200;
+    
+}
+.profileAlign {
+    align-items: center;
+}
+   
+.profileAlign div {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+}
+
+footer h5{
+    color: #4054B2;
+}
+.iconsx{
+    margin: 0;
+}
+footer *{
+    margin-bottom: 100px;
+}
+footer{
+    margin: 0 10%;
+}
+.marginTop{
+    margin-top: 60px;
+}
+
+/* //// ACORDEON */
+
+.h3-x{
+    margin-top: 30px;
+}
+
+.wrap{
+    margin:auto ;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+    
+}
+.sec-wrap{
+    margin:auto ;
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn{
+background-color: rgba(250, 253, 255, 0.445);
+opacity: 0.8;
+width: 500px;
+height: 35px;
+text-align:  center;
+margin:auto;
+border: 1px solid rgba(190, 190, 190, 0.205);
+border-top-right-radius:5px;
+border-top-left-radius:5px;
+transition: 0.3s;
+}
+.fa-arrow-down{
+display: inline;
+margin-left: auto;
+
+
+}
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.ptag{
+
+color: #7e8081d5;
+font-weight: 400;
+text-align: center;
+font-size: 14px;
+display: block;
+margin: auto;
+width: 480px;
+display: none;
+overflow: hidden;
+
+}
+
+@-webkit-keyframes fadeIn {
+from { height: 0px; }
+to { height: 60px; }
+}
+@keyframes fadeIn {
+from { height: 0px; }
+to { height: 60px; }
+}
+.btn:hover{
+color: #4054B2;
+}
+.btn:focus{
+    color: #4054B2;
+}
+.ptaganimation{
+display: block;
+-webkit-animation: fadeIn 0.03s;
+animation: fadeIn 0.03s;
+}
+.del{
+color:  #e60000;
+width:25px;
+visibility: visible;
+text-align: end;
+display: block;
+margin-left: auto;
+padding-right: 45px;
+}
+
+.displaynone{
+    display: none;
+}
+span .ulx li{
+    font-size: 14px;
+    
+}
+.spani .ulx {
+    margin-left: 20px;
+    visibility: hidden;
+}
+.spani{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-grow:3;
+    
+}
+
+
+@media  (max-width: 722px){
+    .cardgroup {
+        flex-direction: column;
+    align-items: center;
+    }
+    .cardgroup div{
+        width:400px;
+    }
+    .ulRide li{
+        text-align: center;
+    }
+    .grid{
+        margin-left: 60px;
+    }
+    footer{
+        padding: 0 20px;
+    }
+}
+@media (max-width: 576px){
+    .spani{
+        display: flex;
+    }
+    .ulDiv{display: none;}
+    
+
+}
